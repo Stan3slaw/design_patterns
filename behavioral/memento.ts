@@ -37,11 +37,11 @@ class ConcreteMemento implements Memento {
   }
 
   public getState(): string {
-    return this.state.substring(0, 10);
+    return this.state;
   }
 
   public getName(): string {
-    return `${this.date} / ${this.state}...`;
+    return `${this.date} / ${this.state.substring(0, 10)}...`;
   }
 
   public getDate(): string {
